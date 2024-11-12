@@ -1,0 +1,59 @@
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Arial Black";
+  display: grid;
+  background: #598efa;
+  color: #ffffff;
+  height: 100px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.tabla-malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 25px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  justify-content: center;
+  text-align: center;
+  width: 95%;
+}
+
+.columna-semestre {
+  flex: 1;
+}
+
+Button {
+  width: 100%;
+  padding: 10px;
+  margin: 4px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-height: 86px;
+}
+
+Button.ramo-selected {
+  background-color: rgb(9, 177, 9);
+  color: white;
+}
+
+Button.ramo-prev {
+  background-color: rgb(255, 22, 22);
+  color: white;
+}
+
+Button.ramo-next {
+  background-color: rgb(0, 132, 255);
+  color: white;
+}
